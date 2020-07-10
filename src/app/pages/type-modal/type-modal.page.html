@@ -1,0 +1,13 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Selecciona el tipo</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let type of types;" (click)="filterPokemons(type.name)">
+            {{type.name | titlecase}}
+        </ion-item>
+    </ion-list>
+</ion-content>

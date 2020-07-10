@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{pokemon.name | titlecase}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Blank</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-card>
+        <div class="ion-text-center">
+            <img src="{{pokemon.frontImg | noimage}}" />
+            <img src="{{pokemon.backImg | noimage}}" />
+        </div>
+        <ion-card-header>
+            <ion-card-subtitle>{{pokemon.specie | titlecase}}</ion-card-subtitle>
+            <ion-card-title>{{pokemon.name | titlecase}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <div class="description">
+                <ion-row>
+                    <ion-col>
+                        <ion-icon name="barbell-outline"></ion-icon><label>Peso: {{pokemon.weight}} kg</label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-icon name="arrow-up-circle-outline"></ion-icon><label>Altura: {{pokemon.height}} m</label>
+                    </ion-col>
+                </ion-row>
+            </div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

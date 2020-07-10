@@ -1,0 +1,22 @@
+ion-header {
+    ion-title {
+        img {
+            height: 40px;
+            vertical-align: middle;
+        }
+        span {
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+}
+
+.container {
+    padding-top: 5px;
+}
+
+.spinner {
+    position: relative;
+    text-align: center;
+    top: 40vh;
+}
